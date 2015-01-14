@@ -1,0 +1,30 @@
+0000-00-00 : MASTER : Latest development version
+  - Minor i18n-related fix.
+  - Decorator to automatically select templates based on locale
+  - Fixes unicode issues with HTML and common helpers under Python 2
+
+2014-10-14 : v0.1a4 : Bugfixes and minor updates
+  - Added helper function for generating form tags
+  - Added pgettext and npgettext functions to i18n module
+  - Fixed manifest to include the LICENSE file
+  - Fixed link_other to use SPAN as default wrapper
+  - Fixed unicode issue in to_unicode common function
+  - Default locale is now available on request object
+
+2014-09-19 : v0.1a3 : Bugfixes and minor updates
+  - Changed documentation to reflect actual behavior of add_qparam
+  - Added set_qparam and del_qparam functions
+  - vcheckbox and vselect now compare values as strings
+  - add_qparam and set_qparam will always coerce values into unicode string
+
+2014-09-17 : v0.1a2 : Bufixes and minor updates
+  - Fixed bug where CSRF decorator used Unicode value for header name in Py2
+  - Fixed I18NPlugin not handling case where route has no config
+  - Fixed I18NPlugin not having API version property
+  - Fixed wrong parameter name in field_error helper
+  - html.vselect helper now has empty parameter for specifying placeholder
+  - Added add_qparam helper to html module
+
+2014-08-27 : v0.1a1 : Initial release
+  - Imported code from various Outernet Inc projects and cleaned it up to
+    support Python 2.7 and Python 3

@@ -12,3 +12,4 @@ strings and URLs.
 
 This package is required by some of the other Bottle Utils packages.
 
+.. _Bottle: http://bottlepy.org/

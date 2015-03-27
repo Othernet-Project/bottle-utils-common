@@ -7,18 +7,21 @@ def read(fname):
     """ Return content of specified file """
     return open(os.path.join(os.path.dirname(__file__), fname)).read()
 
+VERSION = bottle_utils.__version__
+
 setup(
-    name = 'bottle-utils-common',
-    version = bottle_utils.__version__,
-    author = 'Outernet Inc',
-    author_email = 'branko@outernet.is',
-    description = ('Commmon utilities for developing apps with Bottle web framework'),
-    license = 'BSD',
-    keywords = 'bottle utils unicode compatibility',
-    url = 'http://outernet-project.github.io/bottle-utils/',
+    name='bottle-utils-common',
+    version=VERSION,
+    author='Outernet Inc',
+    author_email='branko@outernet.is',
+    description=('Commmon utilities for developing apps with Bottle web '
+                 'framework'),
+    license='BSD',
+    keywords='bottle utils unicode compatibility',
+    url='http://outernet-project.github.io/bottle-utils/',
     packages=find_packages(),
     long_description=read('README.rst'),
-    install_requires = [
+    install_requires=[
         'bottle==0.12.7',
         'python-dateutil==2.2',
     ],

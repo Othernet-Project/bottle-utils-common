@@ -22,7 +22,7 @@ setup(
     packages=find_packages(),
     long_description=read('README.rst'),
     install_requires=[
-        'bottle==0.12.7',
+        'bottle>=0.12.7',
         'python-dateutil==2.2',
     ],
     classifiers=[
